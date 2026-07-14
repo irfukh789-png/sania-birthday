@@ -1,1 +1,101 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
+body{
+background:linear-gradient(135deg,#050505,#1a1a1a,#3b1f0b);
+overflow-x:hidden;
+color:white;
+text-align:center;
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+background:radial-gradient(circle,#3d2500,#111,#000);
+}
+
+h1{
+font-size:55px;
+color:#FFD700;
+text-shadow:0 0 20px gold;
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+from{text-shadow:0 0 10px gold;}
+to{text-shadow:0 0 30px gold,0 0 50px orange;}
+}
+
+.subtitle{
+font-size:22px;
+margin-top:20px;
+color:#f8e7a1;
+}
+
+.card{
+width:90%;
+max-width:750px;
+margin:40px auto;
+padding:30px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(12px);
+border-radius:20px;
+box-shadow:0 0 25px rgba(255,215,0,.3);
+}
+
+.photo{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid gold;
+box-shadow:0 0 30px gold;
+margin-bottom:20px;
+}
+
+h2{
+color:#FFD700;
+margin-bottom:20px;
+}
+
+p{
+line-height:1.9;
+font-size:18px;
+}
+
+button{
+padding:16px 35px;
+font-size:18px;
+background:#FFD700;
+border:none;
+border-radius:40px;
+cursor:pointer;
+margin-top:30px;
+font-weight:bold;
+transition:.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+#final{
+display:none;
+margin-top:25px;
+font-size:22px;
+color:#fff;
+animation:fade 2s;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
